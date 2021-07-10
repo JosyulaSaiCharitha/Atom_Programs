@@ -10,3 +10,14 @@ for ch in str1:
         total = total + (alphabet.index(ch)+1)
 
 print(total)
+
+# another way to find weight of string
+alpha="abcdefghijklmnopqrstuvwxyz"
+strings="abc"
+counter=0
+# Enumerate() method adds a counter to an iterable and returns it in a form of enumerate object.
+for i,v in enumerate(alpha,1):
+    for j in strings:
+        if v==j:
+            counter+=i
+print(counter)
